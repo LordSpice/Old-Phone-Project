@@ -112,7 +112,7 @@ public class OldPhone {
 			if (file.hasNextLine()) {
 				waste = file.nextLine();
 			}
-			System.out.println(waste);
+			System.out.println(waste); // To check what is compiled
 		}
 	}
 }
