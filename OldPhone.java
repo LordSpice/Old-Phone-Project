@@ -2,6 +2,8 @@ import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
+// I have already discovered the issue I had with my program
+
 public class OldPhone {
 
 	public static void main(String args[]) {
@@ -16,6 +18,7 @@ public class OldPhone {
 		}
 
 		int loop = file.nextInt();
+		file.nextline(); // T remove whtespace
 
 		for (int i = 0; i < loop; i++) {
 			String toConvert = file.nextLine();
@@ -108,11 +111,14 @@ public class OldPhone {
 				}
 			}
 
+			/*
 			String waste = null; // Weird behaviour?
 			if (file.hasNextLine()) {
 				waste = file.nextLine();
 			}
 			System.out.println(waste); // To check what is compiled
+			Didn't really need any of this
+			*/
 		}
 	}
 }
